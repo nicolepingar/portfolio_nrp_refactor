@@ -1,0 +1,146 @@
+/* pink background on entire page  */
+body {
+    background-color: #E37383;
+}
+/* all links will scroll  */
+html {
+    scroll-behavior: smooth;
+  }
+/* links are not blue or underlined initially or after clicked  */
+a:link, a:visited {
+    text-decoration: none;
+    color:#f7a583
+  }
+/* styles and positions header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: #f7a583;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    padding: 20px;
+    align-items: center;
+}
+/* makes Nicole Rose Pingar bigger */
+h1 {
+    font-size: 75px;
+}
+/* displays list items in a row and removes bullets */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+}
+/* formats list items in nav bar  */
+li {   
+    border-style: solid;
+    border-color: #f7a583;
+    background-color: white;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-size: 35px;
+}
+/* font family for all text */
+main {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+/* formats so h2 and section are horizonal, spaces content, and aligns h2 center */
+#about-me, #work, #contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 25px;
+    align-items: center;
+}
+/* formats and styles */
+p {
+    border-style: double;
+    flex-basis: 33%;
+    padding: 10px;
+    background-color: white;
+    color: #f7a583;
+    font-weight: bolder;    
+}
+/* positions cards on page */
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 2 5%;    
+}
+/* formats all h2 headers */
+h2 {
+    border-style:double;
+    border-color: #f7a583;
+    background-color: white;
+    color: #f7a583;
+    padding: 5px;
+}
+/* positions placeholders 2 per row */
+.placeholder {
+    flex: 0 2 400px;
+    flex-grow: 1;
+}
+/* positions and styles cards */
+aside {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-right: 98px;
+}
+/* styles card headers and positions them bottom left */
+.horiseon, .placeholder {
+    background-color: white;
+    color: #f7a583;
+    position: absolute; 
+    bottom: 8px;
+    left: 16px;
+    }
+/* formats list items horizonal, spaces list items, and removes bullets */
+.info {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    border-color: #f7a583;
+    font-size: 25px;
+    font-weight: bolder;
+    flex: 0 2 75%; 
+    list-style: none;
+}
+/* formats & styles footer */
+footer {
+    text-align: center;
+    background-color: white;
+    color: #f7a583;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+/* when screen is less than 768px, flex director changes from rows to columns */
+@media screen and (max-width: 768px) {
+    header, main {flex-direction: column;}
+}
+/* when screen is less than 550px, cards move to one column */
+@media screen and (max-width: 550px) {
+    .cards {max-width: 100%;}
+}
+
+
+/* hover over links and colors reverse */
+li:hover {
+    background-color: #f7a583;
+}
+a:hover {
+    color: white;
+}
+/* hover over cards and they decrease in size */
+aside:hover {
+    transform: scale(0.8);
+}
