@@ -140,7 +140,3 @@ li:hover {
 a:hover {
     color: white;
 }
-/* hover over cards and they decrease in size */
-aside:hover {
-    transform: scale(0.8);
-}

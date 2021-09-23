@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicole Pingar Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
@@ -23,55 +25,68 @@
                     <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a href="https://docs.google.com/document/d/1P0FW8JKwZfem406qAqLxutIRgvENQ3VNIZuhuN2jRQs/edit?usp=sharing" target="_blank">Resume</a>
+                    <a href="https://docs.google.com/document/d/1P0FW8JKwZfem406qAqLxutIRgvENQ3VNIZuhuN2jRQs/edit?usp=sharing"
+                        target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="about-me-class" id="about-me">
-            <h2>About Me</h2>
-            <p>My name is Nicole Rose Pingar and I am aspiring to become a web developer. 
-                I am in the process of completing a full-stack coding Bootcamp through UPenn LPS. 
+        <section class="about-me-class row mt-2" id="about-me">
+
+            <h2 class="col-lg-2">About Me</h2>
+            <p class="col-lg-6">My name is Nicole Rose Pingar and I am aspiring to become a web developer.
+                I am in the process of completing a full-stack coding Bootcamp through UPenn LPS.
                 Upon graduation in November 2021, I hope to secure a full-time position in web development. </p>
-            <img src="./assets/images/nicole.jpg" alt="Picture of Nicole" width="200px">
+            <img src="./assets/images/nicole.jpg" alt="Picture of Nicole" width="100px" class="col-lg-3">
+
         </section>
 
-        <section id="work">
 
-            <h2>Work</h2>
-            
-            <section class="cards">
-                <aside>
-                    <h3 class="horiseon">Horiseon Refactor</h3>
-                    <a href="https://nicolepingar.github.io/Homework_01/" target="_blank"><img src="./assets/images/horiseon.PNG" alt="Placeholder" width="800px"></a>
-                </aside>            
-                <aside>
-                    <h3 class="placeholder">Placeholder 1</h3>
-                    <a href="https://nicolepingar.github.io/Homework_01/" target="_blank"><img src="./assets/images/placeholder.png" alt="Placeholder" width="350px"></a>
-                </aside>
-                <aside>
-                    <h3 class="placeholder">Placeholder 2</h3>
-                    <a href="https://nicolepingar.github.io/Homework_01/" target="_blank"><img src="./assets/images/placeholder.png" alt="Placeholder" width="350px"></a>
-                </aside>
-                <aside>
-                    <h3 class="placeholder">Placeholder 3</h3>
-                    <a href="https://nicolepingar.github.io/Homework_01/" target="_blank"><img src="./assets/images/placeholder.png" alt="Placeholder" width="350px"></a>
-                </aside>
-                <aside>
-                    <h3 class="placeholder">Placeholder 4</h3>
-                    <a href="https://nicolepingar.github.io/Homework_01/" target="_blank"><img src="./assets/images/placeholder.png" alt="Placeholder" width="350px"></a>
-                </aside>
-            </section>
+
+        <div class="d-flex justify-content-around container-fluid" id="work">
+                <h2 class="col-lg-1 align-self-center">Work</h2>
+                <div class="card col-lg-3 m-1" style="width: 18rem;">
+                    <img src="./assets/images/placeholder.png" class="card-img-top" alt="Picture of Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1: Date Night</h5>
+                        <a href="https://github.com/henlowgg/Date-Night" class="btn btn-outline-secondary d-flex justify-content-center mb-2" target="_blank">Date
+                            Night GitHub Repository</a>
+                        <a href="https://github.com/henlowgg/Date-Night" class="btn btn-outline-secondary d-flex justify-content-center" target="_blank">Date
+                            Night Site</a>
+                    </div>
+                </div>
+            <div class="card col-lg-3" style="width: 18rem;">
+                <img src="./assets/images/dashboard.jpg" class="card-img-top" alt="Picture of Dashboard">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <a href="https://github.com/nicolepingar/weather_dashboard" class="btn btn-outline-secondary d-flex justify-content-center mb-2"
+                        target="_blank">Weather Dashboard GitHub Repository</a>
+                    <a href="https://nicolepingar.github.io/weather_dashboard/" class="btn btn-outline-secondary d-flex justify-content-center"
+                        target="_blank">Weather Dashboard Site</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3" style="width: 18rem;">
+                <img src="./assets/images/Capture.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Work Day Scheduler</h5>
+                    <a href="https://github.com/nicolepingar/work_day_scheduler" class="btn btn-outline-secondary d-flex justify-content-center mb-2"
+                        target="_blank">Work Day Scheduler GitHub Repository</a>
+                    <a href="https://nicolepingar.github.io/work_day_scheduler/" class="btn btn-outline-secondary d-flex justify-content-center"
+                        target="_blank">Work Day Scheduler Site</a>
+                </div>
+            </div>
+
+        </div>
+
         </section>
-            
-        </section>
-        
+
         <section id="contact-me">
             <h2>Contact Me</h2>
 
-            <ul class="info">
+            <ul class="info row">
                 <li><a href="tel:4848832574">484.883.2574</a></li>
                 <li><a href="nicolepingar@gmail.com">nicolepingar@gmail.com</a></li>
                 <li><a href="https://github.com/nicolepingar" target="_blank">Github</a></li>
