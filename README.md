@@ -1,5 +1,3 @@
-# portfolio_nrp_refactor
-
 # Nicole Pingar Portfolio
 
 ## Description
@@ -7,10 +5,6 @@ I have created a portfolio page to showcase my skills and talents. The portfolio
 
 ## Usage
 Please click this link to view my portfolio: https://nicolepingar.github.io/portfolio_nrp_refactor/
-
-Below is a picture of my portfolio:
-
-!["Portfolio Picture"](assets/images/portfolio.jpg)
 
 ## How to Contribute
 Please find me on GitHub @nicolepingar or email me at nicolepingar@gmail.com.
